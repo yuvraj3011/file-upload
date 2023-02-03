@@ -26,6 +26,9 @@ export class AppComponent implements OnInit {
   async ngOnInit(): Promise<void> {
     try{
       this.uploadedFiles = JSON.parse(await localStorage.getItem('files'));
+      if(this.uploadedFiles == undefined){
+        this.uploadedFiles = [];
+      }
     }catch(err){
       this.uploadedFiles = [];
     }

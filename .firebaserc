@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "file-upload-4c941": {
+      "hosting": {
+        "file-uploader": [
+          "file-upload-4c941"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "file-upload-4c941"
+  }
+}
